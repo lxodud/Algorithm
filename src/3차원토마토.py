@@ -44,7 +44,7 @@ def is_raw_tomato(box):
       if 0 in sublist:
         global time
         time = -1
-        return False
+        return
 
 is_raw_tomato(board)
 print(time)
