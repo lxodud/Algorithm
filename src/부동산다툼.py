@@ -5,16 +5,7 @@ import sys
 input = sys.stdin.readline
 
 N, Q = map(int, input().split())
-
-tree = [[-1, -1] for _ in range(N + 1)]
 occupied_lands = [False] * (N + 1)
-
-for node in range(1, N + 1):
-  if node * 2 <= N:
-    tree[node][0] = node * 2
-  
-  if node * 2 + 1 <= N:
-    tree[node][1] = node * 2 + 1
 
 for _ in range(Q):
   target = int(input())
